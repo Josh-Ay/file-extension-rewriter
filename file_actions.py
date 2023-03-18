@@ -9,7 +9,7 @@ def get_files_and_sub_folders_in_folder(path_to_folder: str):
     """
     list_of_items_in_folder = listdir(path_to_folder)
     list_of_files = [item for item in list_of_items_in_folder if
-                               len(item.split(".")) > 1 and len(item.split(".")[len(item.split(".")) - 1]) > 2]
+                               len(item.split(".")) > 1 and len(item.split(".")[len(item.split(".")) - 1]) > 1]
     list_of_sub_folders = [item for item in list_of_items_in_folder if item not in list_of_files]
 
     return list_of_files, list_of_sub_folders
